@@ -1,0 +1,38 @@
+.main-container{
+    margin: auto;
+    text-align: center;
+}
+
+.headline
+{ color: #7c795d;
+     font-family: 'PlutoRegular', serif;
+      font-size: 45px; 
+      font-weight: normal; 
+      line-height: 48px;
+       margin-bottom:30px; 
+       color:white;
+    }
+
+
+@font-face {
+    font-family: "PlutoRegular";
+    src: url(../fonts/PlutoRegular.otf);
+}
+
+
+.search-container{
+    display: flex;
+    direction: row;
+}
+
+
+.button{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 37.5em) {
+
+.input{
+    width:200%;
+}
+}

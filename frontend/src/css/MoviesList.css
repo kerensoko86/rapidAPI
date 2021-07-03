@@ -1,0 +1,7 @@
+.movies-containter{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
