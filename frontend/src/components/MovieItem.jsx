@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import '../css/MovieItem.css';
 
 
-const MovieItem = (props) => {
-    const { Title, Year, imdbID } = props.movie;
-    var { Poster } = props.movie;
+const MovieItem = ({ movie }) => {
+    let { Title, Year, imdbID, Poster } = movie;
 
     if (Poster === 'N/A') {
         Poster = 'https://www.100daysofrealfood.com/wp-content/uploads/2011/06/popcorn1-500x500.jpg';

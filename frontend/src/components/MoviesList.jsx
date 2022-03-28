@@ -3,12 +3,10 @@ import MovieItem from './MovieItem';
 
 import '../css/MoviesList.css';
 
-const MoviesList = (props) => {
-    const { movies } = props;
-
+const MoviesList = ({ movies }) => {
     return (
         <div className="movies-containter">
-            {movies.map((movie, index) => <MovieItem key={index} movie={movie} />)}
+            {movies.map((movie) => <MovieItem key={movie.imdbID} movie={movie} />)}
         </div>
     );
 }
